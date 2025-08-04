@@ -1,6 +1,6 @@
 # 🧮 GUI-Based Inventory Management System
 
-A complete **Inventory Management System** built using Python's `tkinter` GUI framework. It supports multiple user roles—**Admin**, **Staff**, and **Customer**—each with distinct permissions and interfaces. Inventory and authentication data are managed using `.xlsx` files (Excel spreadsheets), enabling easy editing and access without requiring an external database.
+A complete **Inventory Management System** built using Python's `PyQt5` GUI framework. It supports multiple user roles—**Admin**, **Staff**, and **Customer**—each with distinct permissions and interfaces. Inventory and authentication data are managed using `.xlsx` files (Excel spreadsheets), enabling easy editing and access without requiring an external database.
 
 ---
 
@@ -13,7 +13,7 @@ A complete **Inventory Management System** built using Python's `tkinter` GUI fr
 - 🧾 **Excel (.xlsx) Data Storage**
   - No external database required
 - 🎨 **User-Friendly GUI**
-  - Built entirely with `tkinter`
+  - Built entirely with `PyQt5`
   - Includes a separate CSS-like styling sheet for theme consistency
 - 🧑‍💼 **Admin Tools**
   - View and manage user roles and product information
@@ -26,16 +26,16 @@ A complete **Inventory Management System** built using Python's `tkinter` GUI fr
 
 ## 📁 Project Structure
 
-```bash
+```plaintext
 GUI-Based-Inventory-system/
 │
-├── admin_gui.py                  # Admin GUI interface
-├── staff_gui.py                  # Staff GUI interface
-├── customer_gui.py               # Customer GUI interface
+├── admin_gui.py                           # Admin GUI interface
+├── staff_gui.py                           # Staff GUI interface
+├── customer_gui.py                        # Customer GUI interface
 ├── userinterface_for_inventory_system.py  # Main entry point
-├── inventory_data.xlsx           # Inventory data (Excel file)
-├── passwords.xlsx                # Login credentials and user roles
-├── inventory_css.css             # Styling rules for tkinter elements
+├── inventory_data.xlsx                    # Inventory data (Excel file)
+├── passwords.xlsx                         # Login credentials and user roles
+├── inventory_css.css                      # Styling rules for tkinter elements
 ```
 
 ---
@@ -43,13 +43,12 @@ GUI-Based-Inventory-system/
 ## 🛠️ Requirements
 
 - Python 3.x
-- `tkinter` (included with most Python installations)
-- `openpyxl` (for reading/writing `.xlsx` files)
+- `PyQt5` (included with most Python installations)
 
 ### Install Dependencies
 
 ```bash
-pip install openpyxl
+pip install PyQt5
 ```
 
 ---
@@ -57,7 +56,10 @@ pip install openpyxl
 ## 🔧 How to Run
 
 ```bash
-python userinterface_for_inventory_system.py
+python userinterface_for_inventory_system.py ( For 3.7+ versions )
+OR
+py userinterface_for_inventory_system.py  ( For 3.10+ versions )
+
 ```
 
 Make sure `inventory_data.xlsx` and `passwords.xlsx` are in the same directory when running the program.
